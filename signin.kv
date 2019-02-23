@@ -1,0 +1,25 @@
+<SigninWindow>:
+    orientation: "vertical"  ## 
+    spacing: 10 ## space between widgets
+   
+    # By default, the orientation is horizontal
+    BoxLayout:
+        size_hint_y: None
+        height: 50
+        Label: 
+            text: "Access Control"
+            bold: True
+            # By default 0-1 range. 
+            # x means x
+            size_hint_x: 0.9
+        Label: 
+            text: "x"
+            size_hint_x: 0.1
+    BoxLayout:
+        orientation: "vertical"
+        TextInput:
+            hint_text: "Username"
+        TextInput:
+            hint_text: "Password"
+    Button:
+        text: "Sign In"
