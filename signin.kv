@@ -23,7 +23,7 @@
         ## two values: x for left right, y for top bottom
         ## four values: top, right, bottom and left
         padding: main_win.space_x, 10
-        spacing: 20 
+        #spacing: 20 
         BoxLayout:
             orientation: "vertical"
             spacing: 10
@@ -35,7 +35,15 @@
             TextInput:
                 hint_text: "Password"
                 multiline: False
+        Label:
+            id: sp
+            size_hint_y: None
+            height: 40
         Button:
             text: "Sign In"
             size_hint_y:None
             height: 40
+        Label:
+            id: sp2
+            #size_hint_y: None
+            #height: 40
