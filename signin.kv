@@ -3,18 +3,32 @@
     orientation: "vertical"  ## 
     spacing: 10 ## space between widgets
     space_x: self.size[0]/3
-    
+   
+    ## White background  
+    canvas.before: 
+        Color:
+            rgba: (1,1,1,1)  ## white
+        Rectangle:
+            size: self.size
+            pos:self.pos
+ 
     # By default, the orientation is horizontal
     BoxLayout:
         size_hint_y: None
         height: 50
+        canvas.before:
+            Color:
+                rgba: (0.06,0.45,0.45,1)  ## white
+            Rectangle:
+                size: self.size
+                pos:self.pos
         Label: 
             text: "Access Control"
             bold: True
             # By default 0-1 range. 
             # x means x
             size_hint_x: 0.9
-        Label: 
+        Button: 
             text: "x"
             size_hint_x: 0.1
     BoxLayout:
